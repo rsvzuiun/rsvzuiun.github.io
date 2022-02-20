@@ -14,6 +14,16 @@
       padding-right: 10px;
     }
   </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+    integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"
+    integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"
+    crossorigin="anonymous"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
 </head>
 
 <body>
@@ -33,6 +43,7 @@
       <td><input type="text" name="cruel" id="cruel" class="in" value="140"></td>
     </tr>
   </table>
+
   <h2>計算結果</h2>
   <table>
     <tr>
@@ -56,6 +67,45 @@
       <td><span id="result-2525-cruel">2525-cruel</span></td>
     </tr>
   </table>
+
+  <h2>計算式</h2>
+  <p>
+    $$ [白ダメ] = \min(非クリティカルダメージ, 20000+限界突破) $$
+    $$ [赤ダメ] = \operatorname{int}\left[[白ダメ] \cdot 4
+    \cdot \left\{1 + 0.01 \cdot \left(\frac{n}{100}\right)^2 + 1.01\cdot\frac{n}{100}\right\}
+    \cdot [追加倍率]
+    \right] $$
+    $$ [追加倍率] = [純粋, \max 250\%]
+    \cdot [暴走, \max 250\%]
+    \cdot [クルーエル]
+    ) $$
+  </p>
+
+  <h2>特記事項</h2>
+  <dl>
+    <dt>純粋5セット効果</dt>
+    <dd>
+      「致命打ヒット時、40％ の確率で、対象の最大HPの 10％ 相当のダメージを返す。」<br />
+      ゲーム内に記載はないが、純粋未発動時ダメージの2.5倍が上限 (= 追加ダメージ150%)
+    </dd>
+    <dt>超越スキル「魔力の暴走」</dt>
+    <dd>
+      「一定の確率で、自身の攻撃力増加および魔法攻撃力増加に応じた数値によって限界ダメージを無視した追加ダメージが入る。
+      <span style="color:red">※ 追加ダメージは最大 150％ 制限</span> 」<br />
+      <a
+        href="https://members.redsonline.jp/news/maintenance_body.asp?ntc_num=12387#:~:text=%E3%83%BB%E8%B6%85%E8%B6%8A%E3%82%B9%E3%82%AD%E3%83%AB%E3%80%8C%E9%AD%94%E5%8A%9B%E3%81%AE%E6%9A%B4%E8%B5%B0%E3%80%8D%E3%81%8C%E3%80%8C%E8%BF%BD%E5%8A%A0%E3%83%80%E3%83%A1%E3%83%BC%E3%82%B8%E3%81%8C%E6%9C%80%E5%A4%A7150%25%E3%80%8D%E3%81%AB%E5%A4%89%E6%9B%B4%E3%81%95%E3%82%8C%E3%81%BE%E3%81%99">
+        v0.0696: 超越スキル「魔力の暴走」が「追加ダメージが最大150%」に変更されます</a>
+    </dd>
+    <dt>クルーエル系追加ダメージ</dt>
+    <dd>
+      <ul style="margin-block: 0;">
+        <li>戦士: ブラッディアームス</li>
+        <li>霊術師: クルーエルソウル</li>
+        <li>メイド: インサイト</li>
+        <li>あとはよく知らん</li>
+      </ul>
+    </dd>
+  </dl>
 
   <script>
     const dcdmg_calc = (base, dcdmg, amp = 1, cruel_amp = 1) => {
