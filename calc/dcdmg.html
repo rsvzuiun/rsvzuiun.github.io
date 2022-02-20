@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>ダブクリダメ計算機</title>
+  <meta name='viewport' content='width=660, initial-scale=1'>
+  <style>
+    th,
+    td {
+      text-align: right;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>ダブクリダメ計算機</h1>
+  <h2>計算条件</h2>
+  <p>
+    白ダメ <input type="text" name="base" id="base" class="in" value="35000"><br />
+    ダブクリダメ% <input type="text" name="dcdmg" id="dcdmg" class="in" value="183"><br />
+    クルーエル系% <input type="text" name="cruel" id="cruel" class="in" value="140">
+  </p>
+  <h2>計算結果</h2>
+  <table>
+    <tr>
+      <th></th>
+      <th>赤ダメ</th>
+      <th>クルーエル</th>
+    </tr>
+    <tr>
+      <td>赤ダメ</td>
+      <td><span id="result-dc">dc</span></td>
+      <td><span id="result-dc-cruel">dc-cruel</span></td>
+    </tr>
+    <tr>
+      <td>純粋or暴走</td>
+      <td><span id="result-25">25</span></td>
+      <td><span id="result-25-cruel">25-cruel</span></td>
+    </tr>
+    <tr>
+      <td>純粋and暴走</td>
+      <td><span id="result-2525">2525</span></td>
+      <td><span id="result-2525-cruel">2525-cruel</span></td>
+    </tr>
+  </table>
+
+  <script>
+    const dcdmg_calc = (base, dcdmg, amp = 1, cruel_amp = 1) => {
+      const DC_FACTOR = 4
+      return Math.floor(base * DC_FACTOR
+        * (1 + 0.01 * (dcdmg / 100) ** 2 + 1.01 * (dcdmg / 100))
+        * amp
+        * cruel_amp
+      )
+    };
+    const doit = () => {
+      const base = parseInt(document.getElementById('base').value);
+      const dcdmg = parseInt(document.getElementById('dcdmg').value);
+      const cruel = parseInt(document.getElementById('cruel').value) / 100;
+      document.getElementById('result-dc').innerText = dcdmg_calc(base, dcdmg).toLocaleString();
+      document.getElementById('result-25').innerText = dcdmg_calc(base, dcdmg, 2.5).toLocaleString();
+      document.getElementById('result-2525').innerText = dcdmg_calc(base, dcdmg, 2.5 * 2.5).toLocaleString();
+
+      document.getElementById('result-dc-cruel').innerText = dcdmg_calc(base, dcdmg, 1, cruel).toLocaleString();
+      document.getElementById('result-25-cruel').innerText = dcdmg_calc(base, dcdmg, 2.5, cruel).toLocaleString();
+      document.getElementById('result-2525-cruel').innerText = dcdmg_calc(base, dcdmg, 2.5 * 2.5, cruel).toLocaleString();
+    };
+    document.addEventListener('DOMContentLoaded', () => {
+      const elms_in = document.querySelectorAll('.in');
+      elms_in.forEach((e, k, p) => {
+        e.addEventListener('input', doit)
+      });
+      doit();
+    });
+  </script>
+</body>
+
+</html>
