@@ -24,25 +24,29 @@
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
     integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
+
+    <script defer src='../js/form-storage.js'></script>
 </head>
 
 <body>
   <h1>ダブクリダメ計算機</h1>
   <h2>計算条件</h2>
-  <table>
-    <tr>
-      <td>白ダメ</td>
-      <td><input type="text" name="base" id="base" class="in" value="35000"></td>
-    </tr>
-    <tr>
-      <td>ダブクリダメ%</td>
-      <td><input type="text" name="dcdmg" id="dcdmg" class="in" value="183"></td>
-    </tr>
-    <tr>
-      <td>クルーエル系%</td>
-      <td><input type="text" name="cruel" id="cruel" class="in" value="140"></td>
-    </tr>
-  </table>
+  <form action="javascript:void(0);">
+    <table>
+      <tr>
+        <td>白ダメ</td>
+        <td><input type="number" name="base" id="base" class="in" value="35000"></td>
+      </tr>
+      <tr>
+        <td>ダブクリダメ%</td>
+        <td><input type="number" name="dcdmg" id="dcdmg" class="in" value="183"></td>
+      </tr>
+      <tr>
+        <td>クルーエル系%</td>
+        <td><input type="number" name="cruel" id="cruel" class="in" value="140"></td>
+      </tr>
+    </table>
+  </form>
 
   <h2>計算結果</h2>
   <table>
@@ -70,14 +74,14 @@
 
   <h2>計算式</h2>
   <p>
-    $$ [白ダメ] = \min(非クリティカルダメージ, 20000+限界突破) $$
-    $$ [赤ダメ] = \operatorname{int}\left[[白ダメ] \cdot 4
+    $$ [\text{白ダメ}] = \min(\text{非クリティカルダメージ}, 20000+\text{限界突破}) $$
+    $$ [\text{赤ダメ}] = \operatorname{int}\left[[\text{白ダメ}] \cdot 4
     \cdot \left\{1 + 0.01 \cdot \left(\frac{n}{100}\right)^2 + 1.01\cdot\frac{n}{100}\right\}
-    \cdot [追加倍率]
+    \cdot [\text{追加倍率}]
     \right] $$
-    $$ [追加倍率] = [純粋, \max 250\%]
-    \cdot [暴走, \max 250\%]
-    \cdot [クルーエル]
+    $$ [\text{追加倍率}] = [\text{純粋}, \max 250\%]
+    \cdot [\text{暴走}, \max 250\%]
+    \cdot [\text{クルーエル}]
     $$
   </p>
 
@@ -108,6 +112,7 @@
   </dl>
 
   <script>
+    let storage = undefined;
     const dcdmg_calc = (base, dcdmg, amp = 1, cruel_amp = 1) => {
       const DC_FACTOR = 4
       return Math.floor(base * DC_FACTOR
@@ -127,12 +132,20 @@
       document.getElementById('result-dc-cruel').innerText = dcdmg_calc(base, dcdmg, 1, cruel).toLocaleString();
       document.getElementById('result-25-cruel').innerText = dcdmg_calc(base, dcdmg, 2.5, cruel).toLocaleString();
       document.getElementById('result-2525-cruel').innerText = dcdmg_calc(base, dcdmg, 2.5 * 2.5, cruel).toLocaleString();
+      storage.save();
     };
     document.addEventListener('DOMContentLoaded', () => {
       const elms_in = document.querySelectorAll('.in');
       elms_in.forEach((e, k, p) => {
         e.addEventListener('input', doit)
       });
+      storage = new FormStorage('form', {
+        name: 'rsvzui-dcdmg',
+        includes: [
+          '[class="in"]'
+        ]
+      });
+      storage.apply();
       doit();
     });
   </script>
