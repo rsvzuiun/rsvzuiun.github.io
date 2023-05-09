@@ -1,0 +1,48 @@
+baseURL = "https://rsvzuiun.github.io/"
+title = "rsvzuiun"
+paginate = 5
+theme = "PaperMod"
+
+languageCode = "ja-jp"
+defaultcontentlanguage = "ja"
+
+enableEmoji = true
+enableGitinfo = true
+hasCJKLanguage = true
+
+[markup.highlight]
+style = "github-dark"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+dateformat = "2006-01-02"
+
+[params.homeInfoParams]
+title = "なんかかく"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/rsvzui/"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/rsvzuiun/"
+
+[[menu.main]]
+name = "Archives"
+url = "/archives/"
+weight = 10
+[[menu.main]]
+name = "Tags"
+url = "/tags/"
+weight = 20
+[[menu.main]]
+name = "計算機"
+url = "/tags/計算機/"
+weight = 30
+[[menu.main]]
+name = "例のビューア"
+url = "https://rsvzuiun.github.io/rs-item-viewer/"
+weight = 40
