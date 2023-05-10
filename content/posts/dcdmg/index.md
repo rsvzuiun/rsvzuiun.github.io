@@ -7,7 +7,6 @@ math: true
 
 <script defer src="/js/form-storage.js"></script>
 <script defer src="index.js"></script>
-<link href="index.css" rel="stylesheet" />
 
 ## 計算条件
 
