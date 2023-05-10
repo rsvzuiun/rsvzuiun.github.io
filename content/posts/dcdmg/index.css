@@ -1,0 +1,5 @@
+input {
+  padding: 2px;
+  color: var(--content);
+  border: 1px solid var(--primary);
+}

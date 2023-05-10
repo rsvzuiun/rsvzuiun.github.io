@@ -5,13 +5,12 @@ tags: ["計算機"]
 math: true
 ---
 
-<style>
-input {
-  color: inherit;
-}
-</style>
+<script defer src="/js/form-storage.js"></script>
+<script defer src="index.js"></script>
+<link href="index.css" rel="stylesheet" />
 
 ## 計算条件
+
 <form action="javascript:void(0);">
   <table>
     <tr>
@@ -55,6 +54,7 @@ input {
 </table>
 
 ## 計算式
+
 <p>
   $$ [\text{白ダメ}] = \min(\text{非クリティカルダメージ}, 20000+\text{限界突破}) $$
   $$ [\text{赤ダメ}] = \operatorname{int}\left[[\text{白ダメ}] \cdot 4
@@ -68,6 +68,7 @@ input {
 </p>
 
 ## 特記事項
+
 <dl>
   <dt>純粋5セット効果</dt>
   <dd>
@@ -84,7 +85,7 @@ input {
   </dd>
   <dt>クルーエル系<br />追加ダメージ</dt>
   <dd>
-    <ul style="margin-block: 0;">
+    <ul>
       <li>戦士: ブラッディアームス</li>
       <li>霊術師: クルーエルソウル</li>
       <li>メイド: インサイト</li>
@@ -92,44 +93,3 @@ input {
     </ul>
   </dd>
 </dl>
-
-<script defer src='/js/form-storage.js'></script>
-
-<script>
-  let storage = undefined;
-  const dcdmg_calc = (base, dcdmg, amp = 1, cruel_amp = 1) => {
-    const DC_FACTOR = 4
-    return Math.floor(base * DC_FACTOR
-      * (1 + 0.01 * (dcdmg / 100) ** 2 + 1.01 * (dcdmg / 100))
-      * amp
-      * cruel_amp
-    )
-  };
-  const doit = () => {
-    const base = parseInt(document.getElementById('base').value);
-    const dcdmg = parseInt(document.getElementById('dcdmg').value);
-    const cruel = parseInt(document.getElementById('cruel').value) / 100;
-    document.getElementById('result-dc').innerText = dcdmg_calc(base, dcdmg).toLocaleString();
-    document.getElementById('result-25').innerText = dcdmg_calc(base, dcdmg, 2.5).toLocaleString();
-    document.getElementById('result-2525').innerText = dcdmg_calc(base, dcdmg, 2.5 * 2.5).toLocaleString();
-
-    document.getElementById('result-dc-cruel').innerText = dcdmg_calc(base, dcdmg, 1, cruel).toLocaleString();
-    document.getElementById('result-25-cruel').innerText = dcdmg_calc(base, dcdmg, 2.5, cruel).toLocaleString();
-    document.getElementById('result-2525-cruel').innerText = dcdmg_calc(base, dcdmg, 2.5 * 2.5, cruel).toLocaleString();
-    storage.save();
-  };
-  document.addEventListener('DOMContentLoaded', () => {
-    const elms_in = document.querySelectorAll('.in');
-    elms_in.forEach((e, k, p) => {
-      e.addEventListener('input', doit)
-    });
-    storage = new FormStorage('form', {
-      name: 'rsvzui-dcdmg',
-      includes: [
-        '[class="in"]'
-      ]
-    });
-    storage.apply();
-    doit();
-  });
-</script>
