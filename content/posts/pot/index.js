@@ -34,6 +34,7 @@ const doit = () => {
     pot_boost,
     breath
   ).toFixed(1);
+  storage.save();
 };
 
 document.addEventListener("DOMContentLoaded", () => {
