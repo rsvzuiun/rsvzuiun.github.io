@@ -37,8 +37,8 @@ math: true
   <tr>
     <th></th>
     <th>単位</th>
-    <th>息吹あり</th>
     <th>息吹なし</th>
+    <th>息吹あり</th>
   </tr>
   <tr>
     <td>秒間回復速度</td>
