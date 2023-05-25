@@ -15,6 +15,7 @@ style = "github-dark"
 
 [markup.goldmark.renderer]
 unsafe = true
+hardWraps = true
 
 [params]
 dateformat = "2006-01-02"
