@@ -36,7 +36,7 @@ math: true
       <td>+ <input name="op3" id="op3" class="in" value="-"></td>
     </tr>
     <tr>
-      <td>N / UM</td>
+      <td>N / UM **</td>
       <td>
       <select name="method" id="method" class="in">
       <option value="N">N</option>
@@ -50,5 +50,6 @@ math: true
     </tr>
   </table>
   <p>* 空オプションは"-"など数字ではないものを入力して、NPCオプションなど要求レベル0のオプションは0を入力してください。</p>
+  <p>** 装備がUM もしくは ULTオプションを含むならUM、そうでなければNを選択してください。</p>
 </form>
 
