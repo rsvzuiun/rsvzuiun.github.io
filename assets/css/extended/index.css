@@ -3,3 +3,11 @@ input {
   color: var(--content);
   border: 1px solid var(--primary);
 }
+
+select {
+  font: inherit;
+  background-color: var(--theme);
+  padding: 2px;
+  color: var(--content);
+  border: 1px solid var(--primary);
+}
