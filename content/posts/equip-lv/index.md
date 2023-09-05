@@ -13,39 +13,47 @@ math: true
   <table>
     <tr>
       <td>ベース要求Lv</td>
-      <td><input type="number" name="base" id="base" class="in" value="1100"></td>
+      <td align="right"></td>
+      <td><input type="number" name="base" id="base" class="in" value="1100" style="width: 5em"></td>
     </tr>
     <tr>
       <td>Nx1OP目</td>
-      <td>- <input type="number" name="nx_minus" id="nx_minus" class="in" value="180"></td>
+      <td align="right">-</td>
+      <td><input type="number" name="nx_minus" id="nx_minus" class="in" value="180" style="width: 5em"></td>
     </tr>
     <tr>
       <td>バッチなど</td>
-      <td>- <input type="number" name="badge_minus" id="badge_minus" class="in" value="0"></td>
+      <td align="right">-</td>
+      <td><input type="number" name="badge_minus" id="badge_minus" class="in" value="0" style="width: 5em"></td>
     </tr>
     <tr>
       <td>1OP *</td>
-      <td>+ <input name="op1" id="op1" class="in" value="-"></td>
+      <td align="right">+</td>
+      <td><input name="op1" id="op1" class="in" value="-" style="width: 5em"></td>
     </tr>
     <tr>
       <td>2OP *</td>
-      <td>+ <input name="op2" id="op2" class="in" value="-"></td>
+      <td align="right">+</td>
+      <td><input name="op2" id="op2" class="in" value="-" style="width: 5em"></td>
     </tr>
     <tr>
       <td>3OP *</td>
-      <td>+ <input name="op3" id="op3" class="in" value="-"></td>
+      <td align="right">+</td>
+      <td><input name="op3" id="op3" class="in" value="-" style="width: 5em"></td>
     </tr>
     <tr>
       <td>N / UM **</td>
+      <td align="right"></td>
       <td>
       <select name="method" id="method" class="in">
-      <option value="N">N</option>
-      <option value="UM">UM</option>
+        <option value="N">N</option>
+        <option value="UM">UM</option>
       </select>
       </td>
     </tr>
     <tr>
       <td>要求レベル</td>
+      <td align="right"></td>
       <td><span id="out"></span></td>
     </tr>
   </table>
