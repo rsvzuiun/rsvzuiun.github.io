@@ -783,9 +783,15 @@ const doit = () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   init();
-  const elms_in = document.querySelectorAll(".in");
-  elms_in.forEach((e, k, p) => {
+  document.querySelectorAll(".in").forEach((e, k, p) => {
     e.addEventListener("input", doit);
+  });
+  const clear = (event) => {
+    document.getElementById(event.target.id.replace("-sel", "")).value = "-";
+    doit();
+  };
+  document.querySelectorAll("input[type='search']").forEach((e, k, p) => {
+    e.addEventListener("search", clear);
   });
   storage = new FormStorage("form", {
     name: "rsvzui-equip-lv",
