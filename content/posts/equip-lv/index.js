@@ -1,15 +1,5 @@
 let storage = undefined;
 
-const clip = (x, l, u) => {
-  if (x < l) {
-    return l;
-  } else if (u < x) {
-    return u;
-  } else {
-    return x;
-  }
-};
-
 const doit = () => {
   const base = parseInt(document.getElementById("base").value) || 0;
   const nx_minus = parseInt(document.getElementById("nx_minus").value) || 0;
@@ -25,8 +15,7 @@ const doit = () => {
     else if (isNaN(b)) return -1;
     else return b - a;
   });
-  let item = clip(base - nx_minus - badge_minus, 0, Infinity);
-  console.log(ops);
+  let item = base - nx_minus - badge_minus;
   if (method == "UM") {
     if (!isNaN(ops[2])) {
       item +=
@@ -43,7 +32,7 @@ const doit = () => {
     if (!isNaN(ops[1])) item += Math.trunc((ops[1] * 2) / 3);
     if (!isNaN(ops[2])) item += Math.trunc((ops[2] * 1) / 3);
   }
-  document.getElementById("out").innerText = item;
+  document.getElementById("out").innerText = Math.max(0, item);
 
   storage.save();
 };
