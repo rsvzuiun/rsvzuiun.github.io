@@ -30,16 +30,19 @@ math: true
       <td>1OP *</td>
       <td align="right">+</td>
       <td><input name="op1" id="op1" class="in" value="-" style="width: 5em"></td>
+      <td><input type="search" name="op1-sel" id="op1-sel" class="in" list="oplist"></td>
     </tr>
     <tr>
       <td>2OP *</td>
       <td align="right">+</td>
       <td><input name="op2" id="op2" class="in" value="-" style="width: 5em"></td>
+      <td><input type="search" name="op2-sel" id="op2-sel" class="in" list="oplist"></td>
     </tr>
     <tr>
       <td>3OP *</td>
       <td align="right">+</td>
       <td><input name="op3" id="op3" class="in" value="-" style="width: 5em"></td>
+      <td><input type="search" name="op3-sel" id="op3-sel" class="in" list="oplist"></td>
     </tr>
     <tr>
       <td>N / UM **</td>
@@ -59,5 +62,6 @@ math: true
   </table>
   <p>* 空オプションは"-"など数字ではないものを入力して、NPCオプションなど要求レベル0のオプションは0を入力してください。</p>
   <p>** 装備がUM もしくは ULTオプションを含むならUM(アイコン右下がUMになります)、そうでなければNを選択してください。</p>
+  <datalist id="oplist"></datalist>
 </form>
 
