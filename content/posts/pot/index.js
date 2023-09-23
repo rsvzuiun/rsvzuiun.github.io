@@ -1,4 +1,7 @@
-let storage = undefined;
+const storage = new FormStorage("form", {
+  name: "rsvzui-pot",
+  includes: ['[class="in"]'],
+});
 
 const calc_hps = (hp, con, pot_boost, breath) =>
   (((1 + pot_boost / 100) * (con + 50)) / 5) * (1 + breath / 100);
@@ -38,14 +41,7 @@ const doit = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  const elms_in = document.querySelectorAll(".in");
-  elms_in.forEach((e, k, p) => {
-    e.addEventListener("input", doit);
-  });
-  storage = new FormStorage("form", {
-    name: "rsvzui-pot",
-    includes: ['[class="in"]'],
-  });
+  storage.addEventListener("input", doit);
   storage.apply();
   doit();
 });

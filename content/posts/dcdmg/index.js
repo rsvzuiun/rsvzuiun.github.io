@@ -1,4 +1,8 @@
-let storage = undefined;
+const storage = new FormStorage("form", {
+  name: "rsvzui-dcdmg",
+  includes: ['[class="in"]'],
+});
+
 const dcdmg_calc = (base, dcdmg, amp = 1, cruel_amp = 1) => {
   const DC_FACTOR = 4;
   return Math.floor(
@@ -49,14 +53,7 @@ const doit = () => {
   storage.save();
 };
 document.addEventListener("DOMContentLoaded", () => {
-  const elms_in = document.querySelectorAll(".in");
-  elms_in.forEach((e, k, p) => {
-    e.addEventListener("input", doit);
-  });
-  storage = new FormStorage("form", {
-    name: "rsvzui-dcdmg",
-    includes: ['[class="in"]'],
-  });
+  storage.addEventListener("input", doit);
   storage.apply();
   doit();
 });

@@ -1,4 +1,7 @@
-let storage = undefined;
+const storage = new FormStorage("form", {
+  name: "rsvzui-equip-lv",
+  includes: ['[class="in"]'],
+});
 
 const opMap = new Map([
   ["力Lv1", 1],
@@ -783,20 +786,14 @@ const doit = () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   init();
-  document.querySelectorAll(".in").forEach((e, k, p) => {
-    e.addEventListener("input", doit);
-  });
   const clear = (event) => {
-    document.getElementById(event.target.id.replace("-sel", "")).value = "-";
+    document.getElementById(event.target.id.replace("-sel", "")).value = "";
     doit();
   };
   document.querySelectorAll("input[type='search']").forEach((e, k, p) => {
     e.addEventListener("search", clear);
   });
-  storage = new FormStorage("form", {
-    name: "rsvzui-equip-lv",
-    includes: ['[class="in"]'],
-  });
+  storage.addEventListener("input", doit);
   storage.apply();
   doit();
 });
