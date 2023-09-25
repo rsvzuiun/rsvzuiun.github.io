@@ -53,7 +53,7 @@ const doit = () => {
   storage.save();
 };
 document.addEventListener("DOMContentLoaded", () => {
-  storage.addEventListener("input", doit);
+  storage.addChildrenEventListener("input", doit);
   storage.apply();
   doit();
 });

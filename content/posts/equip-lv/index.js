@@ -793,7 +793,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("input[type='search']").forEach((e, k, p) => {
     e.addEventListener("search", clear);
   });
-  storage.addEventListener("input", doit);
+  storage.addChildrenEventListener("input", doit);
   storage.apply();
   doit();
 });
