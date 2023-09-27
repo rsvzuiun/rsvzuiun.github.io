@@ -6,7 +6,7 @@ math: true
 ---
 
 <script defer src="https://cdn.jsdelivr.net/gh/rsvzuiun/form-storage/dist/index.umd.js"></script>
-<script defer src="index.js"></script>
+{{< script src="index.js" >}}
 
 ## 計算条件
 

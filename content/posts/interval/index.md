@@ -9,7 +9,7 @@ math: true
 
 <script defer src="https://cdn.jsdelivr.net/gh/rsvzuiun/form-storage/dist/index.umd.js"></script>
 <script defer src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-betaincinv@umd/browser.js"></script>
-<script defer src="index.js"></script>
+{{< script src="index.js" >}}
 
 <form action="javascript:void(0);">
   <table>
