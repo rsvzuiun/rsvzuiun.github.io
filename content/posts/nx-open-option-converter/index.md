@@ -27,6 +27,7 @@ tags: ["計算機"]
         <option>武器(笛)</option>
         <option>ネックレス</option>
         <option>ヘルメット</option>
+        <option>冠</option>
         <option>イヤリング、マント</option>
         <option>ベルト</option>
         <option>共用鎧</option>
