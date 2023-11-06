@@ -8,6 +8,15 @@ tags: []
 <script defer src="https://cdn.jsdelivr.net/gh/rsvzuiun/form-storage/dist/index.umd.js"></script>
 {{< script src="index.js" >}}
 
+<style>
+#out th,
+#out td {
+  font-size: 16px;
+  line-height: 1.0;
+  padding: 5px 5px;
+}
+</style>
+
 <form action="javascript:void(0);">
 <table>
   <tr>
