@@ -2,7 +2,7 @@
 date: 2023-11-07T00:00:00+09:00
 title: "解放オプション変換器で出るやつ"
 description: ""
-tags: []
+tags: ["計算機"]
 ---
 
 <script defer src="https://cdn.jsdelivr.net/gh/rsvzuiun/form-storage/dist/index.umd.js"></script>
