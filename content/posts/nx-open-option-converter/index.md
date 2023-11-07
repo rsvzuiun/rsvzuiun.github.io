@@ -15,6 +15,9 @@ tags: ["計算機"]
   line-height: 1.0;
   padding: 5px 5px;
 }
+#out tr *:nth-child(2) {
+  border-right: 1px solid var(--border);
+}
 </style>
 
 <form action="javascript:void(0);">
