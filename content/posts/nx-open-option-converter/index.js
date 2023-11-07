@@ -3,7 +3,7 @@ const storage = new FormStorage("form", {
   includes: ['[class="in"]'],
 });
 
-/** @type {{type: string, rank: string, pos: number, value: string, p: string, p_improved: string}[]} */
+/** @type {{type: string, rank: string, pos: number, effect: string, value: string, p: string, p_improved: string}[]} */
 let table = undefined;
 
 const getParams = () => {
