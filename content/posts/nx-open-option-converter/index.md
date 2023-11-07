@@ -64,3 +64,5 @@ tags: ["計算機"]
 </table>
 </form>
 <div id="out"></div>
+<link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable-base.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable.min.js"></script>
