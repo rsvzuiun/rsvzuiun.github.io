@@ -3,6 +3,7 @@ date: 2023-11-07T00:00:00+09:00
 title: "解放オプション変換器の確率表"
 description: ""
 tags: ["計算機"]
+aliases: ["/posts/nx-open-option-converter/"]
 ---
 
 <script defer src="https://cdn.jsdelivr.net/gh/rsvzuiun/form-storage/dist/index.umd.js"></script>
