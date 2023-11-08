@@ -39,7 +39,7 @@ const gacha = () => {
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
-  table = await fetch("../nx-open-option-converter/table.json")
+  table = await fetch("../table.json")
     .then((r) => r.json())
     .then((j) =>
       j.map((v) => ({

@@ -41,7 +41,7 @@ const doit = () => {
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
-  table = await fetch("table.json").then((r) => r.json());
+  table = await fetch("../table.json").then((r) => r.json());
   storage.addChildrenEventListener("input", doit);
   storage.apply();
   doit();
