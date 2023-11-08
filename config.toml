@@ -1,6 +1,6 @@
 baseURL = "https://rsvzuiun.github.io/"
 title = "rsvzuiun"
-paginate = 5
+paginate = 10
 theme = "PaperMod"
 
 languageCode = "ja-jp"
@@ -19,6 +19,8 @@ hardWraps = true
 
 [params]
 dateformat = "2006-01-02"
+hideSummary = true
+ShowBreadCrumbs = true
 
 [params.homeInfoParams]
 title = "なんかかく"
@@ -30,6 +32,10 @@ url = "https://twitter.com/rsvzui/"
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/rsvzuiun/"
+
+[params.editPost]
+URL = "https://github.com/rsvzuiun/rsvzuiun.github.io/tree/main/content"
+appendFilePath = true
 
 [[menu.main]]
 name = "Archives"
