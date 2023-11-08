@@ -27,6 +27,15 @@ const select = (target, pos, r) => {
   return undefined;
 };
 
+const count = ({reset}={}) => {
+  const elm = document.getElementById("count")
+  if (reset) {
+    elm.innerText = 0
+  } else {
+    elm.innerText = Number(elm.innerText) + 1
+  }
+}
+
 const gacha = () => {
   const [type, rank] = getParams();
   const target = table.filter((v) => v.type === type && v.rank === rank);
@@ -36,6 +45,8 @@ const gacha = () => {
   document.getElementById("out").innerText = ops
     .map((v) => `- ${v.effect}` + (v.value === "-" ? "" : ` ${v.value}`))
     .join("\n");
+
+  count()
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -48,6 +59,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       }))
     );
   document.getElementById("gacha").addEventListener("click", gacha);
-  storage.addChildrenEventListener("input", () => storage.save());
+  storage.addChildrenEventListener("input", () => {
+    count({reset: true})
+    storage.save()
+  });
   storage.apply();
 });

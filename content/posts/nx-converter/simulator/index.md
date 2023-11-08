@@ -1,6 +1,6 @@
 ---
 date: 2023-11-07T00:20:00+09:00
-title: "解放オプション変換器シミュ"
+title: "解放オプション変換器シミュレーター"
 description: ""
 tags: ["計算機"]
 aliases: ["/posts/nx-converter-sim/"]
@@ -40,7 +40,10 @@ aliases: ["/posts/nx-converter-sim/"]
     </td>
   </tr>
   <tr>
-    <td colspan="2"><input type="button" id="gacha" value="ガチャる"></td>
+    <td colspan="2">
+      <input type="button" id="gacha" value="ガチャる">
+      <span id="count">0</span>回目
+    </td>
   </tr>
 </table>
 </form>
