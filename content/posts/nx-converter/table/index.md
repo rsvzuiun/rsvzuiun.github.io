@@ -7,7 +7,7 @@ aliases: ["/posts/nx-open-option-converter/"]
 ---
 
 <script defer src="/js/form-storage/index.umd.js"></script>
-<link href="/js/sortable-tablesort/sortable-base.min.css" rel="stylesheet" />
+<link href="/js/sortable-tablesort/sortable-base.min.css" rel="preload stylesheet" as="style" />
 <script defer src="/js/sortable-tablesort/sortable.min.js"></script>
 {{< script src="index.js" >}}
 
