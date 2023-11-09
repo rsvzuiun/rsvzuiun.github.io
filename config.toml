@@ -94,7 +94,7 @@ target = "static/js/katex"
 includeFiles = [
   "katex.min.js",
   "katex.min.css",
-  "fonts/",
+  "fonts/*",
   "contrib/auto-render.min.js"
 ]
 [[module.mounts]]
