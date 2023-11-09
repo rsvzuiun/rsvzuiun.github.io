@@ -6,7 +6,9 @@ tags: ["計算機"]
 aliases: ["/posts/nx-open-option-converter/"]
 ---
 
-<script defer src="https://cdn.jsdelivr.net/gh/rsvzuiun/form-storage/dist/index.umd.js"></script>
+<script defer src="/js/form-storage/index.umd.js"></script>
+<link href="/js/sortable-tablesort/sortable-base.min.css" rel="stylesheet" />
+<script defer src="/js/sortable-tablesort/sortable.min.js"></script>
 {{< script src="index.js" >}}
 
 <style>
@@ -65,5 +67,3 @@ aliases: ["/posts/nx-open-option-converter/"]
 </table>
 </form>
 <div id="out"></div>
-<link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable-base.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable.min.js"></script>

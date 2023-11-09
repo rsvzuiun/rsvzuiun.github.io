@@ -6,7 +6,7 @@ tags: ["計算機"]
 aliases: ["/posts/nx-converter-sim/"]
 ---
 
-<script defer src="https://cdn.jsdelivr.net/gh/rsvzuiun/form-storage/dist/index.umd.js"></script>
+<script defer src="/js/form-storage/index.umd.js"></script>
 {{< script src="index.js" >}}
 
 <form action="javascript:void(0);">

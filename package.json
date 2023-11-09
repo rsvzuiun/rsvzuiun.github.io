@@ -1,0 +1,21 @@
+{
+  "comments": {
+    "dependencies": {},
+    "devDependencies": {}
+  },
+  "name": "rsvzuiun.github.io",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "form-storage": "github:rsvzuiun/form-storage",
+    "katex": "^0.16.9",
+    "sortable-tablesort": "^3.0.0"
+  }
+}

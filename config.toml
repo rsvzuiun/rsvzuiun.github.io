@@ -53,3 +53,53 @@ weight = 30
 name = "例のビューア"
 url = "https://rsvzuiun.github.io/rs-item-viewer/"
 weight = 40
+
+[[module.mounts]]
+source = "content"
+target = "content"
+[[module.mounts]]
+source = "static"
+target = "static"
+[[module.mounts]]
+source = "layouts"
+target = "layouts"
+[[module.mounts]]
+source = "data"
+target = "data"
+[[module.mounts]]
+source = "assets"
+target = "assets"
+[[module.mounts]]
+source = "i18n"
+target = "i18n"
+[[module.mounts]]
+source = "archetypes"
+target = "archetypes"
+[[module.mounts]]
+source = "node_modules/form-storage/dist"
+target = "static/js/form-storage"
+includeFiles = [
+  "index.umd.js",
+]
+[[module.mounts]]
+source = "node_modules/sortable-tablesort"
+target = "static/js/sortable-tablesort"
+includeFiles = [
+  "sortable.min.js",
+  "sortable-base.min.css",
+]
+[[module.mounts]]
+source = "node_modules/katex/dist"
+target = "static/js/katex"
+includeFiles = [
+  "katex.min.js",
+  "katex.min.css",
+  "fonts/",
+  "contrib/auto-render.min.js"
+]
+[[module.mounts]]
+source = "external/stdlib/math-base-special-betaincinv"
+target = "static/js/stdlib/math-base-special-betaincinv"
+includeFiles = [
+  "browser.js",
+]

@@ -3,10 +3,9 @@ date: 2023-09-04T23:45:49+09:00
 title: "装備要求レベル計算機"
 description: ""
 tags: ["計算機"]
-math: true
 ---
 
-<script defer src="https://cdn.jsdelivr.net/gh/rsvzuiun/form-storage/dist/index.umd.js"></script>
+<script defer src="/js/form-storage/index.umd.js"></script>
 {{< script src="index.js" >}}
 
 <form action="javascript:void(0);">

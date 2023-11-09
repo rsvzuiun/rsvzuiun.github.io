@@ -5,7 +5,7 @@ tags: ["計算機"]
 math: true
 ---
 
-<script defer src="https://cdn.jsdelivr.net/gh/rsvzuiun/form-storage/dist/index.umd.js"></script>
+<script defer src="/js/form-storage/index.umd.js"></script>
 {{< script src="index.js" >}}
 
 ## 計算条件

@@ -1,3 +1,8 @@
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+	branch = master
+[submodule "external/stdlib/math-base-special-betaincinv"]
+	path = external/stdlib/math-base-special-betaincinv
+	url = https://github.com/stdlib-js/math-base-special-betaincinv.git
+	branch = umd
