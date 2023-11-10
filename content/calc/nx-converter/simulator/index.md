@@ -3,7 +3,10 @@ date: 2023-11-07T00:20:00+09:00
 title: "解放オプション変換器シミュレーター"
 description: ""
 tags: ["計算機"]
-aliases: ["/posts/nx-converter-sim/"]
+aliases: [
+  "/posts/nx-converter-sim/",
+  "/posts/nx-converter/simulator/",
+]
 ---
 
 <script defer src="/js/form-storage/index.umd.js"></script>

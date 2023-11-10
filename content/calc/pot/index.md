@@ -2,6 +2,7 @@
 date: 2023-05-10T12:37:52+09:00
 title: "薬回復計算機"
 tags: ["計算機"]
+aliases: ["posts/pot"]
 math: true
 ---
 

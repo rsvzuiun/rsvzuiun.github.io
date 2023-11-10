@@ -1,6 +1,6 @@
 baseURL = "https://rsvzuiun.github.io/"
 title = "rsvzuiun"
-paginate = 10
+paginate = 5
 theme = "PaperMod"
 
 languageCode = "ja-jp"
@@ -21,9 +21,8 @@ hardWraps = true
 dateformat = "2006-01-02"
 hideSummary = true
 ShowBreadCrumbs = true
-
-[params.homeInfoParams]
-title = "なんかかく"
+disableSpecial1stPost = true
+mainSections = ["posts", "calc"]
 
 [[params.socialIcons]]
 name = "x"
@@ -47,7 +46,7 @@ url = "/tags/"
 weight = 20
 [[menu.main]]
 name = "計算機"
-url = "/tags/計算機/"
+url = "/calc/"
 weight = 30
 [[menu.main]]
 name = "例のビューア"

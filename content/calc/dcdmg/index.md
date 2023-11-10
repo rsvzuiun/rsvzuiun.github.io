@@ -3,6 +3,7 @@
 date: 2023-10-17T19:07:00+09:00
 title: "ダブクリダメ計算機"
 tags: ["計算機"]
+aliases: ["/posts/dcdmg/"]
 math: true
 ---
 
