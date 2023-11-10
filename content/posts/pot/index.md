@@ -60,4 +60,4 @@ math: true
 
 ## 参考
 
-* {{< tweet user="rsvzui" id="1607002621923164160" >}}
+{{< tweet user="rsvzui" id="1607002621923164160" >}}

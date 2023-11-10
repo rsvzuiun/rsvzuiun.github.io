@@ -26,8 +26,8 @@ ShowBreadCrumbs = true
 title = "なんかかく"
 
 [[params.socialIcons]]
-name = "twitter"
-url = "https://twitter.com/rsvzui/"
+name = "x"
+url = "https://x.com/rsvzui/"
 
 [[params.socialIcons]]
 name = "github"
