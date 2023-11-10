@@ -1,11 +1,10 @@
----
-date: 2023-05-09T12:31:02+09:00
-title: "作ったもの一覧"
-tags: ["meta"]
----
-
-## アプリ
-* [RS item viewer](https://rsvzuiun.github.io/rs-item-viewer/)
++++
+date = 2023-05-09T12:31:02+09:00
+title = "作ったもの一覧"
+description = "いろいろ作ったやつ"
+summary = "いろいろ作ったやつ、そのうち計算機に仕上げたいなあ"
+tags = ["meta"]
++++
 
 ## スプレ(計算機)
 * [HP計算機](https://docs.google.com/spreadsheets/d/1kErwjmIeOm28gbl8SeW6YtgP8R2bIluMgr_6TKTSM48/edit?usp=sharing)
@@ -16,4 +15,3 @@ tags: ["meta"]
 * [攻撃速度表](https://docs.google.com/spreadsheets/d/1G9yzK6KYLXdabwJRfoUMCWbTkjJc8dWIoyeTRE9KnG8/edit?usp=sharing)
 * [各クリーチャーパッシブスキルの効果一覧](https://docs.google.com/spreadsheets/d/1BgRAY4vW9yzveouQfJC1R3tRRIxb43qmMat3fR0KzRc/edit?usp=sharing)
 * [武道家スキル攻撃力％補正検証](https://docs.google.com/spreadsheets/d/177zApyo7sQSRkguHskCXrDsgPIjBH0ny0ZrwQ0fCYq8/edit?usp=sharing)
-* [NxOP変換確率表](https://docs.google.com/spreadsheets/d/16aV2zm-d8nAh7Njb4ENq-AJaqW2Us7WhNiHJYzPvpzE/edit?usp=sharing)

@@ -1,11 +1,12 @@
----
-date: 2023-09-27T23:53:00+09:00
-title: "母比率の区間推定"
-description: ""
-tags: ["計算機", "統計"]
-aliases: ["posts/interval/"]
-math: true
----
++++
+date = 2023-09-27T23:53:00+09:00
+title = "母比率の区間推定"
+description = "Clopper-Pearsonの信頼区間を計算する"
+summary = "Clopper-Pearsonの信頼区間を計算する"
+tags = ["計算機", "統計"]
+aliases = ["posts/interval/"]
+math = true
++++
 
 <script defer src="/js/stdlib/math-base-special-betaincinv/browser.js"></script>
 <script defer src="/js/form-storage/index.umd.js"></script>

@@ -34,7 +34,8 @@
 </div>
 {{- end }}
 
-{{- $pages := ( site.GetPage .Section ).RegularPagesRecursive }}
+{{- $pages := .RegularPagesRecursive }}
+{{/*  {{- $pages := union .RegularPages .Sections }}  */}}
 {{- $paginator := .Paginate $pages }}
 
 {{- $term := .Data.Term }}

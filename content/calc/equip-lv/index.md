@@ -1,10 +1,11 @@
----
-date: 2023-09-04T23:45:49+09:00
-title: "装備要求レベル計算機"
-description: ""
-tags: ["計算機"]
-aliases: ["/posts/equip-lv/"]
----
++++
+date = 2023-09-04T23:45:49+09:00
+title = "装備要求レベル計算機"
+description = "装備アイテムの要求レベルを計算する"
+summary = "装備アイテムの要求レベルを計算する"
+tags = ["計算機", "アイテム", "装備要求レベル"]
+aliases = ["/posts/equip-lv/"]
++++
 
 <script defer src="/js/form-storage/index.umd.js"></script>
 {{< script src="index.js" >}}

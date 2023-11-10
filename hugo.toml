@@ -2,12 +2,9 @@ baseURL = "https://rsvzuiun.github.io/"
 title = "rsvzuiun"
 paginate = 10
 theme = "PaperMod"
-
 languageCode = "ja-jp"
 defaultcontentlanguage = "ja"
-
 enableEmoji = true
-enableGitinfo = true
 hasCJKLanguage = true
 
 [markup.highlight]
@@ -18,10 +15,12 @@ unsafe = true
 hardWraps = true
 
 [params]
-dateformat = "2006-01-02"
-hideSummary = true
-ShowBreadCrumbs = true
+DateFormat = "2006-01-02"
+ShowCodeCopyButtons = true
 disableSpecial1stPost = true
+# hideSummary = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
 mainSections = ["posts", "calc"]
 
 [[params.socialIcons]]
@@ -37,16 +36,16 @@ URL = "https://github.com/rsvzuiun/rsvzuiun.github.io/tree/main/content"
 appendFilePath = true
 
 [[menu.main]]
-name = "Archives"
-url = "/archives/"
+name = "記事"
+pageRef = "/posts"
 weight = 10
 [[menu.main]]
-name = "Tags"
-url = "/tags/"
+name = "計算機"
+pageRef = "/calc"
 weight = 20
 [[menu.main]]
-name = "計算機"
-url = "/calc/"
+name = "タグ"
+pageRef = "/tags"
 weight = 30
 [[menu.main]]
 name = "例のビューア"

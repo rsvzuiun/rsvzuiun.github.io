@@ -1,13 +1,14 @@
----
-date: 2023-11-07T00:00:00+09:00
-title: "解放オプション変換器の確率表"
-description: ""
-tags: ["計算機"]
-aliases: [
++++
+date = 2023-11-07T00:00:00+09:00
+title = "解放オプション変換器の確率表"
+description = "解放オプション変換器でどんなオプションが出るのか"
+summary = "解放オプション変換器でどんなオプションが出るのか"
+tags = ["計算機", "アイテム", "解放オプション変換器"]
+aliases = [
   "/posts/nx-open-option-converter/",
   "/posts/nx-converter/table/",
 ]
----
++++
 
 <script defer src="/js/form-storage/index.umd.js"></script>
 <link href="/js/sortable-tablesort/sortable-base.min.css" rel="preload stylesheet" as="style" />

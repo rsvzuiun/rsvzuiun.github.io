@@ -1,11 +1,13 @@
----
-# date: 2023-05-09T12:36:11+09:00
-date: 2023-10-17T19:07:00+09:00
-title: "ダブクリダメ計算機"
-tags: ["計算機"]
-aliases: ["/posts/dcdmg/"]
-math: true
----
++++
+date = 2023-05-09T12:36:11+09:00
+lastmod = 2023-10-17T19:07:00+09:00
+title = "ダブクリダメ計算機"
+description = "物理ダブルクリティカルダメージを計算する"
+summary = "物理ダブルクリティカルダメージを計算する"
+tags = ["計算機", "ダメージ", "ダブクリ"]
+aliases = ["/posts/dcdmg/"]
+math = true
++++
 
 <script defer src="/js/form-storage/index.umd.js"></script>
 {{< script src="index.js" >}}

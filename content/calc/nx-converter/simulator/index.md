@@ -1,13 +1,14 @@
----
-date: 2023-11-07T00:20:00+09:00
-title: "解放オプション変換器シミュ"
-description: ""
-tags: ["計算機"]
-aliases: [
++++
+date = 2023-11-07T00:20:00+09:00
+title = "解放オプション変換器シミュ"
+description = "解放オプション変換器のシミュレーター"
+summary = "解放オプション変換器のシミュレーター"
+tags = ["計算機", "アイテム", "解放オプション変換器"]
+aliases = [
   "/posts/nx-converter-sim/",
   "/posts/nx-converter/simulator/",
 ]
----
++++
 
 <script defer src="/js/form-storage/index.umd.js"></script>
 {{< script src="index.js" >}}
@@ -51,4 +52,9 @@ aliases: [
 </table>
 </form>
 
-<pre id="out"></pre>
+<pre id="out">
+
+
+
+
+</pre>

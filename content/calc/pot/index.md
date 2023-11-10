@@ -1,10 +1,12 @@
----
-date: 2023-05-10T12:37:52+09:00
-title: "薬回復計算機"
-tags: ["計算機"]
-aliases: ["posts/pot"]
-math: true
----
++++
+date = 2023-05-10T12:37:52+09:00
+title = "薬回復計算機"
+description = "薬回復速度を計算する"
+summary = "薬回復速度を計算する"
+tags = ["計算機", "薬回復"]
+aliases = ["posts/pot"]
+math = true
++++
 
 <script defer src="/js/form-storage/index.umd.js"></script>
 {{< script src="index.js" >}}
