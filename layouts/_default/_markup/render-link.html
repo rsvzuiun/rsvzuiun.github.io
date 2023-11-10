@@ -1,0 +1,10 @@
+{{- $is_external := (findRE "://" .Destination) -}}
+<a href="{{ .Destination | safeURL }}"
+  {{- with .Title }} title="{{ . }}"{{- end -}}
+  {{- if $is_external }} target="_blank" rel="noopener"
+  {{- end -}}>
+{{- .Text | safeHTML -}}
+{{- if $is_external -}}&nbsp;
+  {{- partial "icon_external_link.html" . -}}
+{{- end -}}
+</a>

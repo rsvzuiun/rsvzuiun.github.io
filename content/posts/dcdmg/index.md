@@ -98,7 +98,7 @@ $$
     <span style="color:red">※ 追加ダメージは最大 150％ 制限</span> 」<br />
     <a
       href="https://members.redsonline.jp/news/maintenance_body.asp?ntc_num=12387#:~:text=%E3%83%BB%E8%B6%85%E8%B6%8A%E3%82%B9%E3%82%AD%E3%83%AB%E3%80%8C%E9%AD%94%E5%8A%9B%E3%81%AE%E6%9A%B4%E8%B5%B0%E3%80%8D%E3%81%8C%E3%80%8C%E8%BF%BD%E5%8A%A0%E3%83%80%E3%83%A1%E3%83%BC%E3%82%B8%E3%81%8C%E6%9C%80%E5%A4%A7150%25%E3%80%8D%E3%81%AB%E5%A4%89%E6%9B%B4%E3%81%95%E3%82%8C%E3%81%BE%E3%81%99" target="_blank">
-      v0.0696: 超越スキル「魔力の暴走」が「追加ダメージが最大150%」に変更されます</a>
+      v0.0696: 超越スキル「魔力の暴走」が「追加ダメージが最大150%」に変更されます{{< icon_external_link >}}</a>
   </dd>
   <dt>クルーエル系<br />追加ダメージ</dt>
   <dd>
@@ -112,8 +112,8 @@ $$
   <dt>固定増幅</dt>
   <dd>
     物理固定限界ダメージ増幅の究極クレスト (
-      <a href="https://members.redsonline.jp/news/news_body.asp?ntc_num=15398" target="_blank">公式</a>,
-      <a href="https://rsvzuiun.github.io/rs-item-viewer/?id=13207" target="_blank">Viewer</a>
+      <a href="https://members.redsonline.jp/news/news_body.asp?ntc_num=15398" target="_blank">公式{{< icon_external_link >}}</a>,
+      <a href="https://rsvzuiun.github.io/rs-item-viewer/?id=13207" target="_blank">Viewer{{< icon_external_link >}}</a>
     )<br />
     の「物理固定限界ダメージ [0]％ 増幅」、クルーエルと合わせた時の挙動が謎 (2023-10-17時点)
   </dd>

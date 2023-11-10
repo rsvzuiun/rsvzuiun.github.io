@@ -60,7 +60,7 @@ tags: ["計算機"]
     </tr>
   </table>
   <p>* オプションなしは空白のまま、NPCオプションなど要求レベル0のオプションは0を入力してください。</p>
-  <p>* オプション名は正式な名称の一部を入力すると候補が絞り込まれます。<br />参照: <a href="https://docs.google.com/spreadsheets/d/1QZ3CZSsYtcK-LsFyYl1FheEvL4QBL28ATxgZk2f_244/edit?usp=drive_link" target="_blank">オプション名の一覧</a></p>
+  <p>* オプション名は正式な名称の一部を入力すると候補が絞り込まれます。<br />参照: <a href="https://docs.google.com/spreadsheets/d/1QZ3CZSsYtcK-LsFyYl1FheEvL4QBL28ATxgZk2f_244/edit?usp=drive_link" target="_blank">オプション名の一覧{{< icon_external_link >}}</a></p>
   <p>** 装備がUM もしくは ULTオプションを含むならUM(アイコン右下がUMになります)、そうでなければNを選択してください。</p>
   <datalist id="oplist"></datalist>
 </form>
