@@ -3,7 +3,7 @@
 * アイテム関連
   * [例のビューア](https://rsvzuiun.github.io/rs-item-viewer/)
   * [装備要求レベル計算機]({{< relref "/calc/equip-lv" >}})
-  * 解放オプション変換器 : [確率表]({{< relref "/calc/nx-converter/table" >}}) / [シミュレーター]({{< relref "/calc/nx-converter/simulator" >}})
+  * 解放オプション変換器 : [確率表]({{< relref "/calc/nx-converter/table" >}}) / [シミュ]({{< relref "/calc/nx-converter/simulator" >}})
 
 * ダメージ関連
   * [ダブクリダメ計算機]({{< relref "/calc/dcdmg" >}})
