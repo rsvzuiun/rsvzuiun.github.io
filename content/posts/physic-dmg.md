@@ -35,17 +35,19 @@ math = true
 
 $p(n)$ を $n$ 回目の攻撃時にオーガが発動する確率として、
 $p(n\le0) = 0$ とすると
-<p>
+
+```math
 $$
 \begin{aligned}
 p(n+1) &= 0 \cdot p(n) + 0.15 \cdot \{1 - p(n)\} \\
        &= 0.15 \cdot \{1 - p(n)\} \\
 p(n)   &= \frac{3}{23} - \frac{3}{23} \cdot \left(-\frac{3}{20}\right)^n \quad (n\ge 0)
 \end{aligned}
-$$</p>
+$$
+```
 
 $q(n)$ を $n$ 回目の攻撃時に致命打が発動する確率として、
-<p>
+```math
 $$
 \begin{aligned}
 q(n) &= p(n-1) + p(n-2) \\
@@ -57,7 +59,8 @@ q(n) &= p(n-1) + p(n-2) \\
      &= [0;~ 0.15;~ 0.2775;~ 0.2584;~ 0.2612;~ 0.2608;~ 0.2609;~\dots] \\
      &\rightarrow 6/23 \approx 0.2609
 \end{aligned}
-$$</p>
+$$
+```
 
 この結果は以下のモンテカルロ法でも確認できる。
 
