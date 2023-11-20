@@ -39,7 +39,7 @@ tags = ["計算機", "アイテム", "解放オプション変換器"]
         <option disabled>共用鎧</option>
         <option disabled>専用鎧</option>
         <option disabled>グローブ、ブレスレット</option>
-        <option disabled>ブーツ</option>
+        <option>ブーツ</option>
       </select>
     </td>
   </tr>
