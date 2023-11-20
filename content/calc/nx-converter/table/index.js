@@ -21,15 +21,19 @@ const doit = () => {
   const out = document.getElementById("out");
   out.innerHTML = "";
   const t = document.createElement("table");
-  t.classList.add("sortable")
+  t.classList.add("sortable");
+
+  const caption = document.createElement("caption");
+  caption.innerText = `解放オプション変換器: ${type} ${rank} #${pos}`;
+  t.appendChild(caption);
 
   const thead = document.createElement("thead");
   thead.innerHTML = /* html */ `\
 <tr><th>#</th><th>オプション効果</th><th>数値</th><th>確率</th><th>改良確率</th></tr>`;
-  t.appendChild(thead)
+  t.appendChild(thead);
 
   const tbody = document.createElement("tbody");
-  t.appendChild(tbody)
+  t.appendChild(tbody);
   filtered.map((v, i) => {
     const row = document.createElement("tr");
     row.innerHTML = /* html */ `\
