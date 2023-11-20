@@ -30,16 +30,16 @@ tags = ["計算機", "アイテム", "解放オプション変換器"]
     <td>
       <select id="type" name="type" class="in">
         <option>武器</option>
-        <option>武器(笛)</option>
-        <option>ネックレス</option>
-        <option>ヘルメット</option>
-        <option>冠</option>
-        <option>イヤリング、マント</option>
-        <option>ベルト</option>
-        <option>共用鎧</option>
-        <option>専用鎧</option>
-        <option>グローブ、ブレスレット</option>
-        <option>ブーツ</option>
+        <option disabled>武器(笛)</option>
+        <option disabled>ネックレス</option>
+        <option disabled>ヘルメット</option>
+        <option disabled>冠</option>
+        <option disabled>イヤリング、マント</option>
+        <option disabled>ベルト</option>
+        <option disabled>共用鎧</option>
+        <option disabled>専用鎧</option>
+        <option disabled>グローブ、ブレスレット</option>
+        <option disabled>ブーツ</option>
       </select>
     </td>
   </tr>
