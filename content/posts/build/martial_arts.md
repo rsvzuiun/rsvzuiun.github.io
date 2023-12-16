@@ -21,13 +21,13 @@ math = false
 参考: [狩場別敵致命打抵抗減少とカンスト表記、ダブクリ確定運【RED STONE】](https://chorrealism.com/redstone/verification/map-double-critical/)
 
 ## 装備
-* 武器: なんでもいい / 彷徨者の伝承だと範囲がちょっと広い
+* 武器: なんでもいい / [彷徨者の伝承](https://rsvzuiun.github.io/rs-item-viewer/?id=9841) だと範囲がちょっと広い
 * 補助: なんでもいい
 * 首: [純愛の約束[Nx]](https://rsvzuiun.github.io/rs-item-viewer/?id=11972) / Tディメンション+1解放で装備Lv920, それ以前はなんでもいい
-* 頭: [[命中補正無視] 頂きの上[Nx]](https://rsvzuiun.github.io/rs-item-viewer/?id=10153) / 命中無視はヤティカヌ以前はなくてもなんとかなる
+* 頭: [命中補正無視] [頂きの上[Nx]](https://rsvzuiun.github.io/rs-item-viewer/?id=10153) / 命中無視はヤティカヌ以前はなくてもなんとかなる
 * 背: [威風堂々[Nx]](https://rsvzuiun.github.io/rs-item-viewer/?id=10228) / 4解放できるなら、解放厳しければなんでもいい
 * 腰: [[遺物]ヘクターの誇り[Nx]](https://rsvzuiun.github.io/rs-item-viewer/?id=8779) / 3解放以上必須!!!
-* 手: [鉄血の意思[Nx]](https://rsvzuiun.github.io/rs-item-viewer/?id=9222) / 4解放できたらなおよし
+* 手: [鉄血の意志[Nx]](https://rsvzuiun.github.io/rs-item-viewer/?id=9222) / 4解放できたらなおよし
 * 鎧: [聖戦の遺物[Nx]](https://rsvzuiun.github.io/rs-item-viewer/?id=9124) / 4解放できたらなおよし
 * 足: [騎士道[Nx]](https://rsvzuiun.github.io/rs-item-viewer/?id=11968) / Tディメンション+1解放で装備Lv920, それ以前は[ブレイブシュート[Nx]](https://rsvzuiun.github.io/rs-item-viewer/?id=8604)
 * クリーチャー: 敵致命減少50 ダブクリ50 あと好み
