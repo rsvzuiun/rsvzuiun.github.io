@@ -140,3 +140,4 @@ tocopen = true
 
 [KR 2023-04-27](http://redstone.logickorea.co.kr/notice/noticeboard/view.aspx?sqn=7838)
 [KR 2023-08-23](http://redstone.logickorea.co.kr/notice/updateboard/view.aspx?sqn=7953)
+※ 韓国公式では魔法強打発動確率増加は1OP目限定のユニークオプションと書いてあるが、なんか2,3OP目にも付いたりする。
