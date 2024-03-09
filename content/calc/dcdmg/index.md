@@ -61,9 +61,19 @@ math = true
     <td><span id="result-enhance-cruel">25-cruel</span></td>
   </tr>
   <tr>
-    <td>純粋and暴走</td>
+    <td>純粋+暴走</td>
     <td><span id="result-pure-enhance">2525</span></td>
     <td><span id="result-pure-enhance-cruel">2525-cruel</span></td>
+  </tr>
+  <tr>
+    <td>恩寵勇気</td>
+    <td><span id="result-brave">-</span></td>
+    <td><span id="result-brave-cruel">cruel</span></td>
+  </tr>
+  <tr>
+    <td>恩寵勇気+暴走</td>
+    <td><span id="result-brave-enhance">-</span></td>
+    <td><span id="result-brave-enhance-cruel">cruel</span></td>
   </tr>
 </table>
 

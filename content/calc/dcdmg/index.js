@@ -6,14 +6,14 @@ const storage = new FormStorage("form", {
 // base 基礎ダメ
 // fixamp 固定増幅
 // dcdmg ダブクリダメ%
-// pure 図案書純粋
+// amp 図案書純粋 と 図案書勇気 の倍率
 // enhance 魔力の暴走
 // cruel クルーエル%
 const dcdmg_calc = ({
   base,
   fixamp,
   dcdmg,
-  pure = 0,
+  amp = 0,
   enhance = 0,
   cruel = 0,
 }) => {
@@ -22,7 +22,7 @@ const dcdmg_calc = ({
     base *
       DC_FACTOR *
       (1 + 0.01 * (dcdmg / 100) ** 2 + 1.01 * (dcdmg / 100)) *
-      (1 + (pure + fixamp) / 100) *
+      (1 + (amp + fixamp) / 100) *
       (1 + enhance / 100) *
       (1 + cruel / 100)
   );
@@ -41,7 +41,7 @@ const doit = () => {
     base,
     fixamp,
     dcdmg,
-    pure: 150,
+    amp: 150,
   }).toLocaleString();
   document.getElementById("result-enhance").innerText = dcdmg_calc({
     base,
@@ -53,7 +53,7 @@ const doit = () => {
     base,
     fixamp,
     dcdmg,
-    pure: 150,
+    amp: 150,
     enhance: 150,
   }).toLocaleString();
 
@@ -67,7 +67,7 @@ const doit = () => {
     base,
     fixamp,
     dcdmg,
-    pure: 150,
+    amp: 150,
     cruel,
   }).toLocaleString();
   document.getElementById("result-enhance-cruel").innerText = dcdmg_calc({
@@ -81,7 +81,36 @@ const doit = () => {
     base,
     fixamp,
     dcdmg,
-    pure: 150,
+    amp: 150,
+    enhance: 150,
+    cruel,
+  }).toLocaleString();
+
+  document.getElementById("result-brave").innerText = dcdmg_calc({
+    base,
+    fixamp,
+    dcdmg,
+    amp: 110,
+  }).toLocaleString();
+  document.getElementById("result-brave-enhance").innerText = dcdmg_calc({
+    base,
+    fixamp,
+    dcdmg,
+    amp: 110,
+    enhance: 150,
+  }).toLocaleString();
+  document.getElementById("result-brave-cruel").innerText = dcdmg_calc({
+    base,
+    fixamp,
+    dcdmg,
+    amp: 110,
+    cruel,
+  }).toLocaleString();
+  document.getElementById("result-brave-enhance-cruel").innerText = dcdmg_calc({
+    base,
+    fixamp,
+    dcdmg,
+    amp: 110,
     enhance: 150,
     cruel,
   }).toLocaleString();
