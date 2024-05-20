@@ -16,6 +16,6 @@
   "dependencies": {
     "form-storage": "github:rsvzuiun/form-storage",
     "katex": "^0.16.10",
-    "sortable-tablesort": "^3.2.2"
+    "sortable-tablesort": "^3.2.3"
   }
 }
