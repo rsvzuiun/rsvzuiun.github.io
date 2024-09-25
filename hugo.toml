@@ -1,6 +1,5 @@
 baseURL = "https://rsvzuiun.github.io/"
 title = "rsvzuiun"
-paginate = 10
 theme = "PaperMod"
 languageCode = "ja-jp"
 defaultcontentlanguage = "ja"
