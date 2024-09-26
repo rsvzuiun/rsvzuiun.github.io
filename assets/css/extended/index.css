@@ -1,13 +1,26 @@
 input {
-  padding: 2px;
-  color: var(--content);
-  border: 1px solid var(--primary);
+  padding: 4px 10px;
+  color: var(--primary);
+  font-weight: bold;
+  border: 2px solid var(--tertiary);
+  border-radius: var(--radius);
+}
+
+input:focus {
+  border-color: var(--secondary);
 }
 
 select {
   font: inherit;
+  background: 0 0;
   background-color: var(--theme);
-  padding: 2px;
-  color: var(--content);
-  border: 1px solid var(--primary);
+  padding: 4px 10px;
+  color: var(--primary);
+  font-weight: bold;
+  border: 2px solid var(--tertiary);
+  border-radius: var(--radius);
+}
+
+select:focus {
+  border-color: var(--secondary);
 }

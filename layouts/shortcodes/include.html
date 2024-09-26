@@ -1,0 +1,5 @@
+{{ $file := .Get 0 }}
+{{ $page := .Page }}
+{{ with resources.Get $file }}
+  {{ .Content | $page.RenderString | safeHTML }}
+{{ end }}

@@ -1,5 +1,3 @@
-# おすすめ
-
 * アイテム関連
   * [例のビューア](https://rsvzuiun.github.io/rs-item-viewer/)
   * [装備要求レベル計算機]({{< relref "/calc/equip-lv" >}})
@@ -13,5 +11,3 @@
 * そのほか
   * [攻撃速度表](https://docs.google.com/spreadsheets/d/1G9yzK6KYLXdabwJRfoUMCWbTkjJc8dWIoyeTRE9KnG8/edit?usp=drive_link)
   * [クリーチャーパッシブ性能一覧](https://docs.google.com/spreadsheets/d/1BgRAY4vW9yzveouQfJC1R3tRRIxb43qmMat3fR0KzRc/edit?usp=drive_link)
-
-# 最近更新

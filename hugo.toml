@@ -6,50 +6,38 @@ defaultcontentlanguage = "ja"
 enableEmoji = true
 hasCJKLanguage = true
 
-[markup.highlight]
-style = "github-dark"
-
-[markup.goldmark.renderer]
-unsafe = true
-hardWraps = true
+[markup]
+highlight.style = "github-dark"
+goldmark.renderer.unsafe = true
+goldmark.renderer.hardWraps = true
 
 [params]
 DateFormat = "2006-01-02"
 ShowCodeCopyButtons = true
+defaultTheme = "auto"
 disableSpecial1stPost = true
-# hideSummary = true
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
+
 mainSections = ["posts", "calc"]
+social = true
+socialIcons = [
+  { name = "x", url = "https://x.com/rsvzui/" },
+  { name = "github", url = "https://github.com/rsvzuiun/" },
+]
+editPost.URL = "https://github.com/rsvzuiun/rsvzuiun.github.io/tree/main/content"
+editPost.appendFilePath = true
 
-[[params.socialIcons]]
-name = "x"
-url = "https://x.com/rsvzui/"
+[params.homeInfoParams]
+Content = '{{% include "/md/home.md" %}}'
 
-[[params.socialIcons]]
-name = "github"
-url = "https://github.com/rsvzuiun/"
-
-[params.editPost]
-URL = "https://github.com/rsvzuiun/rsvzuiun.github.io/tree/main/content"
-appendFilePath = true
-
-[[menu.main]]
-name = "記事"
-pageRef = "/posts"
-weight = 10
-[[menu.main]]
-name = "計算機"
-pageRef = "/calc"
-weight = 20
-[[menu.main]]
-name = "タグ"
-pageRef = "/tags"
-weight = 30
-[[menu.main]]
-name = "例のビューア"
-url = "https://rsvzuiun.github.io/rs-item-viewer/"
-weight = 40
+[menu]
+main = [
+  { name = "記事", pageRef = "/posts", weight = 10 },
+  { name = "計算機", pageRef = "/calc", weight = 20 },
+  { name = "タグ", pageRef = "/tags", weight = 30 },
+  { name = "例のビューア", url = "https://rsvzuiun.github.io/rs-item-viewer/", weight = 40 },
+]
 
 [[module.mounts]]
 source = "content"
@@ -75,16 +63,11 @@ target = "archetypes"
 [[module.mounts]]
 source = "node_modules/form-storage/dist"
 target = "static/js/form-storage"
-includeFiles = [
-  "index.umd.js",
-]
+includeFiles = ["index.umd.js"]
 [[module.mounts]]
 source = "node_modules/sortable-tablesort"
 target = "static/js/sortable-tablesort"
-includeFiles = [
-  "sortable.min.js",
-  "sortable-base.min.css",
-]
+includeFiles = ["sortable.min.js", "sortable-base.min.css"]
 [[module.mounts]]
 source = "node_modules/katex/dist"
 target = "static/js/katex"
@@ -92,11 +75,9 @@ includeFiles = [
   "katex.min.js",
   "katex.min.css",
   "fonts/*",
-  "contrib/auto-render.min.js"
+  "contrib/auto-render.min.js",
 ]
 [[module.mounts]]
 source = "external/stdlib/math-base-special-betaincinv"
 target = "static/js/stdlib/math-base-special-betaincinv"
-includeFiles = [
-  "browser.js",
-]
+includeFiles = ["browser.js"]
