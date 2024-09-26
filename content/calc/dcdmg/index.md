@@ -1,7 +1,7 @@
 +++
 date = 2023-05-09T12:36:11+09:00
 lastmod = 2023-10-17T19:07:00+09:00
-title = "ダブクリダメ計算機"
+title = "[旧版] ダブクリダメ計算機"
 description = "物理ダブルクリティカルダメージを計算する"
 summary = "物理ダブルクリティカルダメージを計算する"
 tags = ["計算機", "ダメージ", "ダブクリ"]
@@ -12,6 +12,9 @@ math = true
 <script defer src="/js/form-storage/index.umd.js"></script>
 {{< script src="index.js" >}}
 
+{{< notice warning >}}
+本ページは [2024-09-19 限界突破システム改変](https://www.redstoneonline.jp/bbs/1/view?p=1&ano=903) 以前の仕様に基づきます。
+{{< /notice >}}
 ## 計算条件
 
 <form action="javascript:void(0);">
@@ -36,8 +39,6 @@ math = true
 </form>
 
 ## 計算結果
-
-2023-10-17 注: 限界増幅とクルーエル系%の計算式がよくわからない、ちょっとズレる
 
 <table>
   <tr>
@@ -83,16 +84,15 @@ math = true
 $$
 \begin{aligned}
 & [\text{基礎ダメ}] = \min(\text{非クリティカルダメージ}, 20000+\text{限界突破}) \\
-& [\text{白ダメ}] = [\text{基礎ダメ}] \cdot [\text{固定増幅\%}] \\
-& [\text{赤ダメ}] = \operatorname{int}\left[[\text{基礎ダメ}] \cdot 4
-  \cdot \left\{1 + 0.01 \cdot \left(\frac{n}{100}\right)^2 + 1.01\cdot\frac{n}{100}\right\}
-  \cdot [\text{追加倍率}]
-  \right] \\
-& [\text{追加倍率}] = \bigl[\\
-& \quad \left\{1 + \left([\text{純粋}, \max 150\%] + [\text{固定増幅\%}]\right)/100\right\} \\
-& \quad \cdot \left(1 + [\text{暴走}, \max 150\%]/100\right) \\
-& \quad \cdot \left(1 + [\text{クルーエル}]/100\right) \\
-& \bigr]
+& [\text{白ダメ}] = [\text{基礎ダメ}] \cdot (1 + [\text{固定増幅\%}] / 100) \\
+& [\text{赤ダメ}] = \operatorname{int}\bigl\{ \\
+& \quad [\text{基礎ダメ}] \\
+& \quad \cdot 4 \\
+& \quad \cdot \left( 1 + \frac{n}{100} \right) \\
+& \quad \cdot \left( 1 + \frac{n}{10000} + \frac{[\text{クルーエル系\%}]}{100} \right) \\
+& \quad \cdot \left(1 + \frac{[\text{純粋}, \max 150\%] + [\text{固定増幅\%}]}{100}\right) \\
+& \quad \cdot \left(1 + \frac{[\text{暴走}, \max 150\%]}{100}\right) \\
+& \quad \bigr\}
 \end{aligned}
 $$
 </p>
@@ -122,12 +122,8 @@ $$
       <li>あとはよく知らん</li>
     </ul>
   </dd>
-  <dt>固定増幅</dt>
-  <dd>
-    物理固定限界ダメージ増幅の究極クレスト (
-      <a href="https://members.redsonline.jp/news/news_body.asp?ntc_num=15398" target="_blank">公式{{< icon_external_link >}}</a>,
-      <a href="https://rsvzuiun.github.io/rs-item-viewer/?id=13207" target="_blank">Viewer{{< icon_external_link >}}</a>
-    )<br />
-    の「物理固定限界ダメージ [0]％ 増幅」、クルーエルと合わせた時の挙動が謎 (2023-10-17時点)
-  </dd>
 </dl>
+
+## 謝辞
+
+[RED STONE JP公式サーバー / シュルトのご意見箱](https://discord.com/channels/1161901874979549194/1194104087332003860/1286772289005682688)

@@ -6,3 +6,6 @@
 	path = external/stdlib/math-base-special-betaincinv
 	url = https://github.com/stdlib-js/math-base-special-betaincinv.git
 	branch = umd
+[submodule "themes/hugo-notice"]
+	path = themes/hugo-notice
+	url = https://github.com/martignoni/hugo-notice

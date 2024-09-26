@@ -17,14 +17,13 @@ const dcdmg_calc = ({
   enhance = 0,
   cruel = 0,
 }) => {
-  const DC_FACTOR = 4;
   return Math.floor(
     base *
-      DC_FACTOR *
-      (1 + 0.01 * (dcdmg / 100) ** 2 + 1.01 * (dcdmg / 100)) *
+      4 *
+      (1 + dcdmg / 100) *
+      (1 + dcdmg / 10000 + cruel / 100) *
       (1 + (amp + fixamp) / 100) *
-      (1 + enhance / 100) *
-      (1 + cruel / 100)
+      (1 + enhance / 100)
   );
 };
 const doit = () => {
