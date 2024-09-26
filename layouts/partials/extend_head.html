@@ -1,7 +1,3 @@
-{{ if not hugo.IsServer }}
-  {{ partial "google/analytics" . }}
-{{ end }}
-
 {{- if or .IsHome .IsSection .Params.math .Site.Params.math }}
   {{- partial "math.html" . }}
 {{- end }}

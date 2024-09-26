@@ -6,6 +6,9 @@ defaultcontentlanguage = "ja"
 enableEmoji = true
 hasCJKLanguage = true
 
+[services]
+googleAnalytics.ID = "G-D0210B1TEC"
+
 [markup]
 highlight.style = "github-dark"
 goldmark.renderer.unsafe = true
