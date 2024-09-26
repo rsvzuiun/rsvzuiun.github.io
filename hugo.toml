@@ -5,6 +5,8 @@ languageCode = "ja-jp"
 defaultcontentlanguage = "ja"
 enableEmoji = true
 hasCJKLanguage = true
+enableGitInfo = true
+frontmatter.lastmod = ["lastmod", ":git"]
 
 [services]
 googleAnalytics.ID = "G-D0210B1TEC"
