@@ -18,7 +18,7 @@ math = false
 * 運: ダブクリ昇華するだけ
 * あとなんでもいい / T比率指が何個かあれば知恵極でも健康極でも効率変わらない
 
-参考: https://twitter.com/chorrealism_gt/status/1315026014171361280
+参考: https://x.com/chorrealism_gt/status/1315026014171361280
 
 ## 装備
 * 武器: なんでもいい / [彷徨者の伝承](https://rsvzuiun.github.io/rs-item-viewer/?id=9841) だと範囲がちょっと広い
