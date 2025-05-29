@@ -12,7 +12,7 @@ math = true
 {{< script src="index.js" >}}
 
 {{< notice warning >}}
-本ページは [2024-09-19 限界突破システム改変](https://www.redstoneonline.jp/bbs/1/view?p=1&ano=903) 以前の仕様に基づきます。
+本ページは [2024-09-19 限界突破システム改変](https://www.redstoneonline.jp/bbs/2/view?ano=893) 以前の仕様に基づきます。
 {{< /notice >}}
 ## 計算条件
 
